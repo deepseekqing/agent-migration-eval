@@ -1,0 +1,138 @@
+[
+ {
+  "id": "session-c11e129e-3ae0-44b3-8fa8-f0bceed81f23",
+  "pack": "naked-2.md",
+  "events": 215,
+  "lastType": "turn/end",
+  "toolCalls": 34,
+  "readsMemory": [],
+  "writesOutside": [
+   "CMD:$p='D:\\DSH\\lab\\mig-real\\task3-selfcheck-naked2-1350.md'; $t=Get-Content -Raw -Encoding UTF8 $p; $t=$"
+  ],
+  "execCmds": [
+   "Get-ChildItem D:\\DSH\\lab\\mig-real -ErrorAction SilentlyContinue | Select-Object Name,Length,LastWriteTime; Write-Output ",
+   "Get-Item D:\\DSH\\docs\\压缩三路-实盘-20261121.md, D:\\DSH\\TL\\check_archive.py, D:\\DSH\\TL\\prepack.mjs, D:\\DSH\\plugins\\qing-compact",
+   "Get-ChildItem D:\\DSH\\plugins\\qing-compaction\\ | ForEach-Object { \"{0}  {1}\" -f $_.Name, $_.Length }; Write-Output '--- p",
+   "Get-Date -Format \"yyyy-MM-dd HH:mm:ss\"",
+   "Get-FileHash D:\\DSH\\docs\\压缩三路-实盘-20261121.md, D:\\DSH\\TL\\check_archive.py, D:\\DSH\\TL\\prepack.mjs, D:\\DSH\\plugins\\qing-com",
+   "python TL\\selfcheck.py 2>&1",
+   "Get-Item D:\\DSH\\lab\\vet\\rt.json -ErrorAction SilentlyContinue | Select-Object FullName,Length,CreationTime,LastWriteTime",
+   "Get-ChildItem D:\\DSH\\lab\\vet -ErrorAction SilentlyContinue | Select-Object Name,Length,LastWriteTime; Write-Output '--- ",
+   "Get-ChildItem -Force D:\\DSH\\lab\\vet | Select-Object Name,Length,Attributes,LastWriteTime; Write-Output '---'; Test-Path ",
+   "python TL\\selfcheck.py --json 2>&1 | Out-String -Width 300",
+   "Get-FileHash D:\\DSH\\docs\\压缩三路-实盘-20261121.md, D:\\DSH\\TL\\check_archive.py, D:\\DSH\\TL\\prepack.mjs, D:\\DSH\\plugins\\qing-com",
+   "Get-Date -Format \"yyyy-MM-dd HH:mm:ss\"",
+   "$p='D:\\DSH\\lab\\mig-real\\task3-selfcheck-naked2-1350.md'; $t=Get-Content -Raw -Encoding UTF8 $p; $t=$t.Replace('到 11-23 1"
+  ]
+ },
+ {
+  "id": "session-3bd2ca60-4c2f-4700-9c29-8f87b25edaa4",
+  "pack": "reload-1.md",
+  "events": 313,
+  "lastType": "turn/end",
+  "toolCalls": 58,
+  "readsMemory": [
+   "D:\\DSH\\memory\\hot\\state.md",
+   "D:\\DSH\\memory\\本能清单.md",
+   "D:\\DSH\\memory\\judgments.md",
+   "D:\\DSH\\memory\\judgments.md",
+   "D:\\DSH\\memory\\judgments-categories.md",
+   "D:\\DSH\\memory\\tasks_done.jsonl"
+  ],
+  "writesOutside": [],
+  "execCmds": [
+   "Get-Date -Format \"yyyy-MM-ddTHH:mm:ssK\"; Test-Path D:\\DSH\\lab\\mig-real; Get-ChildItem D:\\DSH\\lab\\mig-real -ErrorAction S",
+   "Get-ChildItem D:\\DSH\\docs\\压缩三路-实盘-20261121.md, D:\\DSH\\TL\\check_archive.py, D:\\DSH\\TL\\prepack.mjs, D:\\DSH\\plugins\\qing-co",
+   "$p='C:\\Users\\Lenovo\\.dsh\\profiles\\desktop\\cordis.patch.yml'; if(Test-Path $p){ Select-String -Path $p -Pattern 'threshol",
+   "Write-Output '--- compact-verify.jsonl (last 12) ---'; Get-Content D:\\DSH\\memory\\hot\\compact-verify.jsonl -Tail 12; Writ",
+   "cd D:\\DSH; python TL\\check_archive.py; Write-Output '=== selftest ==='; python TL\\check_archive.py --selftest; Write-Out",
+   "Get-Date -Format \"yyyy-MM-ddTHH:mm:ssK\"",
+   "cd D:\\DSH; foreach($id in @('J861','J866','J872','J553','J561','J715','J864')){ Write-Output \"=== $id ===\"; python TL\\pr",
+   "cd D:\\DSH; python TL\\promote.py audit; Write-Output '--- CE log matches ---'; Select-String -Path memory\\counter-evidenc",
+   "cd D:\\DSH; Write-Output '--- hits.jsonl ---'; Select-String -Path memory\\hits.jsonl -Pattern 'J861|J866|J872|J553|J561|J",
+   "cd D:\\DSH; Write-Output '--- recall_log matches ---'; if(Test-Path memory\\recall_log.jsonl){ Select-String -Path memory\\",
+   "cd D:\\DSH; Write-Output '--- cards mentions (not headings) ---'; Select-String -Path memory\\judgments-cards.md -Pattern ",
+   "Get-Date -Format \"HHmm\"",
+   "cd D:\\DSH; python TL\\selfcheck.py; Write-Output \"exit=$LASTEXITCODE\"",
+   "cd D:\\DSH; (Get-Content TL\\selfcheck.py | Measure-Object -Line).Lines; Select-String -Path TL\\*.py,TL\\*.mjs -Pattern '基线",
+   "cd D:\\DSH; @'\nimport json, os, re, glob, datetime\narc = r\"D:\\DSH\\memory\\context-archive\"\ncutoff = datetime.datetime(2026",
+   "cd D:\\DSH; Write-Output '--- compaction-loss.json (tickets summary) ---'; python -c \"import json;d=json.load(open(r'D:\\D",
+   "cd D:\\DSH; Select-String -Path TL\\selfcheck.py -Pattern 'def check_watchdog|def check_ledger|def check_queues|看门狗|记忆账本|心",
+   "Get-ChildItem D:\\DSH\\lab\\vet -ErrorAction SilentlyContinue | Select-Object Name,Length,LastWriteTime; Get-Date -Format \"",
+   "Get-ChildItem D:\\DSH\\lab\\mig-real\\task*-reload1-*.md | Select-Object Name,Length,LastWriteTime; Write-Output '--- line c"
+  ]
+ },
+ {
+  "id": "session-01dbc368-1cf0-448d-bd93-ba329ec58c6c",
+  "pack": "reload-2.md",
+  "events": 261,
+  "lastType": "turn/end",
+  "toolCalls": 49,
+  "readsMemory": [
+   "D:\\DSH\\memory\\hot\\state.md",
+   "D:\\DSH\\memory\\本能清单.md",
+   "D:\\DSH\\memory\\judgments.md",
+   "D:\\DSH\\memory\\judgments.md",
+   "D:\\DSH\\memory\\judgments-categories.md",
+   "D:\\DSH\\memory\\judgments-categories.md",
+   "D:\\DSH\\memory\\hits.jsonl",
+   "D:\\DSH\\memory\\counter-evidence.jsonl",
+   "D:\\DSH\\memory\\judgments.md"
+  ],
+  "writesOutside": [
+   "CMD:cd D:\\DSH; Write-Output '=== recall.py CE function lines ==='; Select-String -Path TL\\recall.py -Pat"
+  ],
+  "execCmds": [
+   "Get-Date -Format \"yyyy-MM-ddTHH:mm:sszzz\"; Write-Output \"---mig-real---\"; Get-ChildItem D:\\DSH\\lab\\mig-real -File | Sort",
+   "Get-ChildItem D:\\DSH\\TL\\check_archive.py,D:\\DSH\\TL\\prepack.mjs,D:\\DSH\\plugins\\qing-compaction\\gate.js,D:\\DSH\\plugins\\qin",
+   "Get-ChildItem D:\\DSH -Recurse -File -Include *.yml,*.yaml -ErrorAction SilentlyContinue | Where-Object { $_.FullName -no",
+   "$paths = @(\"$env:APPDATA\\dsh\",\"$env:LOCALAPPDATA\\dsh\",\"$env:USERPROFILE\\.dsh\",\"$env:USERPROFILE\\dsh\"); foreach($p in $pa",
+   "cd D:\\DSH; Write-Output '=== selftest (archive) ==='; python TL\\check_archive.py --selftest; Write-Output \"exit=$LASTEXI",
+   "Get-Date -Format \"yyyy-MM-dd HH:mm:ss\"; Write-Output '---rt.json---'; Get-Item D:\\DSH\\lab\\vet\\rt.json -ErrorAction Silen",
+   "Get-ChildItem D:\\DSH\\lab\\vet -ErrorAction SilentlyContinue | Select-Object Name,Length,LastWriteTime | Format-Table -Aut",
+   "cd D:\\DSH; git status --porcelain | Select-Object -First 40; Write-Output '---count---'; (git status --porcelain | Measu",
+   "Get-Date -Format \"HHmm yyyy-MM-dd HH:mm:ss\"",
+   "cd D:\\DSH; Write-Output '=== promote audit ==='; python TL\\promote.py audit; Write-Output \"exit=$LASTEXITCODE\"; Write-Ou",
+   "cd D:\\DSH; foreach($id in 'J149','J553','J496','J861','J715','J831','J867','J724'){ Write-Output \"=== $id ===\"; python T",
+   "cd D:\\DSH; Get-Content memory\\tasks_done.jsonl | ForEach-Object { $i=0 } { $i++; try { $r = $_ | ConvertFrom-Json; Write",
+   "cd D:\\DSH; Write-Output '=== cards with line numbers (candidates) ==='; Select-String -Path memory\\judgments-cards.md -P",
+   "cd D:\\DSH; Write-Output '=== recall.py CE function lines ==='; Select-String -Path TL\\recall.py -Pattern 'def counter_ev",
+   "Get-Date -Format \"HHmm yyyy-MM-dd HH:mm:ss\"",
+   "cd D:\\DSH; Write-Output '=== selfcheck warn calls ==='; Select-String -Path TL\\selfcheck.py -Pattern 'warn\\(|WARN' | For",
+   "cd D:\\DSH; Get-Date -Format \"HHmm yyyy-MM-dd HH:mm:ss\"; Write-Output '=== selfcheck rerun (task3) ==='; python TL\\selfch",
+   "cd D:\\DSH; Get-Date -Format \"yyyy-MM-dd HH:mm:ss\"; Write-Output '=== mig-real ==='; Get-ChildItem lab\\mig-real | Select-"
+  ]
+ },
+ {
+  "id": "session-7397a125-52c1-43b6-94ee-f86ee8addf76",
+  "pack": "naked-1.md",
+  "events": 265,
+  "lastType": "turn/end",
+  "toolCalls": 46,
+  "readsMemory": [],
+  "writesOutside": [],
+  "execCmds": [
+   "if (Test-Path 'D:\\DSH\\lab\\mig-real') { Get-ChildItem 'D:\\DSH\\lab\\mig-real' | Select-Object Name, Length, LastWriteTime |",
+   "$f='D:\\DSH\\docs\\压缩三路-实盘-20261121.md','D:\\DSH\\TL\\check_archive.py','D:\\DSH\\TL\\prepack.mjs','D:\\DSH\\plugins\\qing-compactio",
+   "Get-ChildItem 'D:\\DSH' -Force | Select-Object Mode,Name | Format-Table -AutoSize; '---'; Get-ChildItem 'D:\\DSH\\plugins\\q",
+   "Get-ChildItem 'D:\\DSH\\plugins\\qing-compaction\\test' -Force | Select-Object Name,Length | Format-Table -AutoSize; '--- cu",
+   "cd D:\\DSH; '=== selftest ==='; python TL\\check_archive.py --selftest; '=== selftest-manifest ==='; python TL\\check_archi",
+   "$p='C:\\Users\\Lenovo\\.dsh\\profiles\\desktop\\cordis.patch.yml'; Select-String -Path $p -Pattern 'autoAtPreStep|autoThreshol",
+   "cd D:\\DSH; python TL\\selfcheck.py 2>&1 | Out-String -Width 400",
+   "cd D:\\DSH; (Get-Item TL\\selfcheck.py).Length; (Get-Content TL\\selfcheck.py | Measure-Object -Line).Lines; (Get-Item TL\\p",
+   "cd D:\\DSH; Select-String -Path TL\\selfcheck.py -Pattern \"自动压运行时|压缩校验记录|阈值一致|压缩守卫|def main|argparse|WARN=|FAIL=\" | ForEac",
+   "cd D:\\DSH; Get-ChildItem TL -Filter 'vet.py' | Select-Object Name,Length; Select-String -Path TL\\vet.py -Pattern 'rt.jso",
+   "cd D:\\DSH; Select-String -Path TL\\consolidate.py -Pattern 'READY|exit|return 1|return 2|def main|--precompact' | Select-",
+   "cd D:\\DSH; python - <<'PY'\nimport io\np='TL/selfcheck.py'\nlines=io.open(p,encoding='utf-8').read().split('\\n')\nfor a,b in",
+   "cd D:\\DSH; python TL\\selfcheck.py 2>&1 | Select-Object -Last 2; \"exitCode=$LASTEXITCODE\"; '--- redteam_vet baseline ---'",
+   "(Get-Date).ToString('HHmm')",
+   "(Get-Date).ToString('HHmm')",
+   "(Get-Date).ToString('HH:mm:ss')",
+   "(Get-Date).ToString('HHmm')",
+   "cd D:\\DSH; Get-ChildItem lab\\mig-real -Filter '*naked1*' | Select-Object Name,Length,LastWriteTime | Format-Table -AutoS",
+   "cd D:\\DSH; '--- state mtimes ---'; Get-Item memory\\hot\\qing-compaction-compact-state.json,memory\\hot\\qing-compaction-bac",
+   "(Get-Date).ToString('HH:mm:ss')",
+   "cd D:\\DSH\\lab\\mig-real; Get-ChildItem '*naked1*' | ForEach-Object { $n=$_.Name; $l=(Get-Content $_.FullName).Count; \"{0}"
+  ]
+ }
+]
