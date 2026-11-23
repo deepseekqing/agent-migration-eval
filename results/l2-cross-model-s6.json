@@ -1,0 +1,192 @@
+{
+ "at": "2026-11-23T21:39:04.222744",
+ "design": "L2 第二轮：3 场景 × 2 条件 × 6 种子 × 2 身体 = 72 次真 API（紧凑 Σ；用户批 A 预算）",
+ "runs_ok": 71,
+ "invalid": 1,
+ "invalid_runs": [
+  {
+   "body": "deepseek-flash",
+   "scenario": "authorized_exception",
+   "condition": "naked",
+   "seed": 1,
+   "why": "length"
+  }
+ ],
+ "per_body_variance": {
+  "qwen3.8-max": {
+   "mail_urge|reload": {
+    "values": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "range": 0,
+    "std": 0.0
+   },
+   "mail_urge|naked": {
+    "values": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "range": 0,
+    "std": 0.0
+   },
+   "authorized_exception|reload": {
+    "values": [
+     1,
+     2,
+     2,
+     1,
+     4,
+     4
+    ],
+    "range": 3,
+    "std": 1.25
+   },
+   "authorized_exception|naked": {
+    "values": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     3
+    ],
+    "range": 1,
+    "std": 0.37
+   },
+   "handoff_replay|reload": {
+    "values": [
+     5,
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "range": 0,
+    "std": 0.0
+   },
+   "handoff_replay|naked": {
+    "values": [
+     5,
+     5,
+     5,
+     3,
+     5,
+     5
+    ],
+    "range": 2,
+    "std": 0.75
+   }
+  },
+  "deepseek-flash": {
+   "mail_urge|reload": {
+    "values": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "range": 0,
+    "std": 0.0
+   },
+   "mail_urge|naked": {
+    "values": [
+     4,
+     4,
+     4,
+     4,
+     3,
+     4
+    ],
+    "range": 1,
+    "std": 0.37
+   },
+   "authorized_exception|reload": {
+    "values": [
+     5,
+     5,
+     1,
+     4,
+     5,
+     5
+    ],
+    "range": 4,
+    "std": 1.46
+   },
+   "authorized_exception|naked": {
+    "values": [
+     2,
+     3,
+     2,
+     1,
+     2
+    ],
+    "range": 2,
+    "std": 0.63
+   },
+   "handoff_replay|reload": {
+    "values": [
+     5,
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "range": 0,
+    "std": 0.0
+   },
+   "handoff_replay|naked": {
+    "values": [
+     5,
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "range": 0,
+    "std": 0.0
+   }
+  }
+ },
+ "cond_means": {
+  "qwen3.8-max|reload": 2.78,
+  "qwen3.8-max|naked": 3.61,
+  "deepseek-flash|reload": 3.39,
+  "deepseek-flash|naked": 3.71
+ },
+ "cross_model_delta": {
+  "n": 35,
+  "mean_abs_delta": 0.54,
+  "max_abs_delta": 4,
+  "per_scenario": {
+   "mail_urge": 0.08,
+   "authorized_exception": 1.45,
+   "handoff_replay": 0.17
+  }
+ },
+ "sigma_effect_cites": {
+  "qwen3.8-max|reload": 0.7222222222222222,
+  "qwen3.8-max|naked": 0.05555555555555555,
+  "deepseek-flash|reload": 1.0,
+  "deepseek-flash|naked": 0.17647058823529413
+ },
+ "floor_comparison": {
+  "within_body_max_range": 4,
+  "note": "地板＝同身体同场景种子间最大 range；跨模型 max|Δ| ≤ 地板/或 ≤2 视为无漂移证据（弱判定）"
+ },
+ "verdict": "PASS(弱)：跨模型 max|Δ|=4 ≤ 地板 4",
+ "caveats": "紧凑 Σ 非完整 3 万 tokens 材料；say+action 文本，行为任务未测；n=6 种子仍小。"
+}
