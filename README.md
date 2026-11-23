@@ -43,3 +43,13 @@
 
 本协议与文档：CC BY 4.0（引用请注明来源与版本）。
 任务材料样例与评测脚本可自由改编用于研究。
+
+## Results (2026-11-23)
+
+| Experiment | Result |
+|---|---|
+| C1 formal Reload (n=2) | Reload×2 = 6/6 (Δ=0); Naked×2 honest refusal (cites=0) |
+| **Reload n=4 extension** | **6/6/5/6 → PASS with variance** (task1/task2 identical; task3 Δ=1) |
+| **Cross-model round (L2, 6 seeds)** | 72 calls (71 valid): mean \|Δ\| **0.54**, max **4**, within-body floor **4** → **PASS (weak)**; Σ effect reproduced (cites reload vs naked: qwen 0.72 vs 0.06; flash 1.00 vs 0.18) |
+
+**Status: closed (measurement capability).** Limitations: extension samples are fresh-context proxies (not GUI sessions); n small; cross-model data from say/action instrument (no tools); self-scored; no third-party reproduction yet.
